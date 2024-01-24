@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.pro {
+    padding: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+
+.back-img {
+    background: url(images/pizza.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar {
+    height: 60px; /* Adjust the height as needed */
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+.welcome {
+    letter-spacing: 5px;
+    text-align: center;
+    color: white;
+    background: rgba(8, 7, 7, 0.8);
+    width: 120px;
+    height: 48px;
+    padding: 10px 2px 2px 2px;
+    border: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.welcome h3{
+    font-size: 1.5em;
+}
+.welcome h3:hover {
+    cursor: pointer;
+}
+
+.welcome p {
+    margin-top: 15px;
+    color: black;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+.men-b1 {
+    margin-top: 25px;
+}
+
+.men-b2 {
+    padding: 10px;
+    background: rgba(8, 7, 7, 0.8);
+    color: white;
+    width: 280px;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+.men-b2:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+    box-shadow: 0 0 5px 1px black;
+}
+
+.nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 15px; /* Adjust the padding as needed */
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.nav ul li a:hover {
+    color: white;
+    font-weight: bolder;
+    text-shadow: 15px 15px 5px 5px;
+    font-size: 20px;
+}
+
+.btn {
+    display: none;
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1024px) {
+    .welcome {
+        width: 30%;
+    }
+}
+
+/* Tablet styles */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .welcome {
+        width: 65%;
+    }
+}
+
+/* Mobile styles */
+@media all and (max-width: 767px) {
+    .welcome {
+        width: 80%;
+    }
+
+    .navbar {
+        height: auto;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-collapse {
+        display: none;
+        background: rgba(8, 7, 7, 0.8);
+        padding: 15px; /* Adjust the padding as needed */
+        position: absolute;
+        top: 60px;
+        width: 100%;
+    }
+
+    .navbar-nav {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar-nav a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid black;
+        color:black;
+    }
+
+    .navbar-toggler.collapsed + .navbar-collapse {
+        display: none;
+    }
+}
